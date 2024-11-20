@@ -108,23 +108,3 @@ class DLPservice:
                 }
             },
         }
-
-    def crypto_deterministic_config(self):
-        return {
-            "crypto_key": {
-                "kms_wrapped": {
-                    "wrapped_key": self.unwrapped_key,
-                    "crypto_key_name": self.key_name,
-                }
-            },
-            "surrogate_info_type": {"name": self.surrogate_type},
-        }
-
-    def crypto_key(self):
-        return {
-            "kms_wrapped": {
-                "wrapped_key": self.unwrapped_key,
-                "crypto_key_name": self.key_name,
-            }
-        }
-
