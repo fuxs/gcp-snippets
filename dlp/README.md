@@ -45,7 +45,7 @@ base64 -i ./aes_key.enc -w 0; echo
 
 ```bash
 python main.py \
-  --key_name 'projects/vertexit/locations/global/keyRings/clouddlp/cryptoKeys/dlp_deidentify_fpe' \
+  --key_name 'projects/MY_PROJECT/locations/global/keyRings/clouddlp/cryptoKeys/dlp_deidentify_fpe' \
   --wrapped_key 'CiQAqP24dM7Roa+hitsaDLMECjqJTZH2oW6U+Y3nwkiVb0XHpm4SSAAjYZDv3BA0qMxfUABiyU+tHxx4r9VM+Nxow+ki+UAxUYz+AgBAIB5tfDsVAzqUgc2BweViD4YUAIOedcIA/CXYLZPJjPmCNQ==' \
   enc "My name is Max Mustermann and my email is max.mustermann@gmail.com"
 ```
@@ -54,7 +54,7 @@ python main.py \
 
 ```bash
 python main.py \
-  --key_name 'projects/vertexit/locations/global/keyRings/clouddlp/cryptoKeys/dlp_deidentify_fpe' \
+  --key_name 'projects/MY_PROJECT/locations/global/keyRings/clouddlp/cryptoKeys/dlp_deidentify_fpe' \
   --wrapped_key 'CiQAqP24dM7Roa+hitsaDLMECjqJTZH2oW6U+Y3nwkiVb0XHpm4SSAAjYZDv3BA0qMxfUABiyU+tHxx4r9VM+Nxow+ki+UAxUYz+AgBAIB5tfDsVAzqUgc2BweViD4YUAIOedcIA/CXYLZPJjPmCNQ==' \
   dec "My name is 🔒DLP🔒(44):AQ3ePunP5DPG0bpR+doVxING2OhjdMlSJfVVEWBCVA== and my email is 🔒DLP🔒(56):AZ4Vf/BGv0Z4D0IFRV3dZXmwuJeleQ3K8vVnp+pF2WBA/FJ5cuL+h1U="
 ```
