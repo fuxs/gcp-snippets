@@ -56,7 +56,7 @@ public class App {
   private static String dstStr = "myproject.mydataset.customer_new";
   private static String sqlStr = "SELECT CONCAT(encrypt(first_name),' - ',  last_name) AS name FROM source";
 
-  private static void parseArguements(String[] args) {
+  private static void parseArguments(String[] args) {
     Options options = new Options();
     Option src = Option.builder("s").longOpt("src")
         .argName("src")
@@ -96,7 +96,7 @@ public class App {
   }
 
   public static void main(String[] args) {
-    parseArguements(args);
+    parseArguments(args);
 
     SparkSession spark = SparkSession.builder().appName("spark-bigquery-demo").getOrCreate();
     spark.udf().register("encrypt", encrypt);
