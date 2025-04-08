@@ -1,3 +1,9 @@
 .vscode/
 **/__pycache__/
+**/__ignore__/
+**/.ruff_cache/
+**/my*.md
+**/.gradle
+**/build
 .python-version
+INTERNAL.md
